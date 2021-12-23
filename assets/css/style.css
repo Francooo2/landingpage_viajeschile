@@ -1,3 +1,22 @@
 body {
     background-color: black;
 }
+.outstanding_image {
+    height: 150px;
+}
+.height_contact {
+    height: 500px;
+}
+
+@media (max-width: 990px) {
+    .outstanding_image {
+        height: 250px;
+    }   
+  }
+
+@media (max-width: 768px) {
+    .outstanding_card {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+  }
