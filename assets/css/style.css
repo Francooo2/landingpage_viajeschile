@@ -1,19 +1,41 @@
+/* Estilos globales */
 body {
     background-color: black;
     position        : relative;
 }
+
+/* Estilos titulos generales */
+.titlefont {
+    font-family: 'Oooh Baby', sans-serif;
+    font-weight: 700;
+    padding-top: 1.6em;
+}
+
+/* Estilos texto general */
+.generalfont {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+/* Estandarización alto de imagenes del tipo card */
 .outstanding_image {
     height: 150px;
 }
+
+/* Alto de formulario de contacto */
 .height_contact {
     height: 500px;
 }
+
+/* Utilizado para ordenar elementos en formulario de contacto */
 .displayspecial {
     display        : flex;
     flex-direction : column;
     justify-content: center;
     align-items    : center;
 }
+
+/* Efecto para links de navegación  */
 .hovereffect:hover {
 	text-shadow:
 		0 0 5px rgba(255,255,255,255),
@@ -26,6 +48,8 @@ body {
 		0 0 140px rgba(38,104,127,1),
 		0 0 180px rgba(38,104,127,1);
 }
+
+/* Estilos footer */
 .positionspecial {
     bottom: -5em;
 }
@@ -33,6 +57,14 @@ footer {
     width: 100%;
 }
 
+/* Efecto cambio de background-color de barra de navegación */
+.move_scroll {
+    background-color: black;
+    transition: background-color 1000ms linear
+}
+
+
+/* Ajustes generales para pantallas pequeñas */
 @media (max-width: 990px) {
     .outstanding_image {
         height: 250px;
@@ -43,5 +75,8 @@ footer {
     .outstanding_card {
         padding-left: 2em;
         padding-right: 2em;
+    }
+    .min_text {
+        font-size: 1.2rem;
     }
   }
